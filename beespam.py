@@ -3,10 +3,11 @@ import time
 
 f = open('beescript.txt')
 
-# this will create delay us
-# so we have time to move curser away from terminal
+# add delay to move curser away from terminal
+# time is in second
 time.sleep(4)
 
 for word in f.read().split():
-    gui.typewrite(word, interval= 0.07) # Change interval for speed of typing
+    # Change interval for speed of typing
+    gui.typewrite(word, interval= 0.07) 
     gui.press('return')
